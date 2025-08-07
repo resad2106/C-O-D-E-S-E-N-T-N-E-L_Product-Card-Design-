@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Our Products | Rashad's Store</title>
+  <meta name="description" content="Browse our amazing products including headphones, watches, speakers and more! Responsive, accessible product grid with dark mode and animations." />
+  <meta property="og:title" content="Rashad's Product Store" />
+  <meta property="og:description" content="Discover quality electronics with quick views and buy now options." />
+  <meta property="og:type" content="website" />
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+</head>
+<body>
+
+  <button id="darkModeToggle" class="dark-mode-toggle" aria-label="Toggle dark mode" title="Toggle dark mode">
+    <span class="moon">🌙</span>
+    <span class="sun">☀️</span>
+  </button>
+
+  <section class="filters" aria-label="Product Filters">
+    <label for="categoryFilter">Category:</label>
+    <select id="categoryFilter" aria-controls="productGrid" aria-label="Filter products by category">
+      <option value="all">All</option>
+      <option value="headphones">Headphones</option>
+      <option value="watch">Watch</option>
+      <option value="speaker">Speaker</option>
+      <option value="mouse">Mouse</option>
+      <option value="stand">Stand</option>
+      <option value="charger">Charger</option>
+    </select>
+
+    <label for="priceFilter">Price:</label>
+    <select id="priceFilter" aria-controls="productGrid" aria-label="Filter products by price">
+      <option value="all">All</option>
+      <option value="low">Under $50</option>
+      <option value="mid">$50 - $100</option>
+      <option value="high">Over $100</option>
+    </select>
+  </section>
+
+  <section class="product-section">
+    <h1 class="section-title" data-aos="fade-down" tabindex="0">Our Products</h1>
+
+    <div id="productGrid" class="product-grid" role="list">
+
+      <article class="product-card" role="listitem" data-category="headphones" data-price="mid" tabindex="0" data-aos="fade-up" aria-labelledby="prod1-title" aria-describedby="prod1-desc">
+        <div class="card-image">
+          <img src="VILINICE-Noise-Cancelling-Headphones-Wireless.webp" alt="Wireless Headphones" loading="lazy" />
+          <button class="overlay" aria-label="Quick view Wireless Headphones" title="Quick View">
+            Quick View
+          </button>
+        </div>
+        <div class="card-content">
+          <h2 id="prod1-title">Wireless Headphones</h2>
+          <p id="prod1-desc">Freedom of wireless sound with premium quality.</p>
+          <div class="rating" aria-label="Rating: 4 out of 5 stars">⭐⭐⭐⭐☆</div>
+          <div class="price">$79.99</div>
+          <button class="buy-btn" aria-label="Buy Wireless Headphones for $79.99">Buy Now</button>
+        </div>
+      </article>
+
+      <article class="product-card" role="listitem" data-category="watch" data-price="high" tabindex="0" data-aos="fade-up" data-aos-delay="100" aria-labelledby="prod2-title" aria-describedby="prod2-desc">
+        <div class="card-image">
+          <img src="watch.webp" alt="Smart Watch" loading="lazy" />
+          <button class="overlay" aria-label="Quick view Smart Watch" title="Quick View">
+            Quick View
+          </button>
+        </div>
+        <div class="card-content">
+          <h2 id="prod2-title">Smart Watch</h2>
+          <p id="prod2-desc">Track your health and stay connected on the go.</p>
+          <div class="rating" aria-label="Rating: 5 out of 5 stars">⭐⭐⭐⭐⭐</div>
+          <div class="price">$129.99</div>
+          <button class="buy-btn" aria-label="Buy Smart Watch for $129.99">Buy Now</button>
+        </div>
+      </article>
+
+      <article class="product-card" role="listitem" data-category="speaker" data-price="mid" tabindex="0" data-aos="fade-up" data-aos-delay="200" aria-labelledby="prod3-title" aria-describedby="prod3-desc">
+        <div class="card-image">
+          <img src="speaker.jpg" alt="Bluetooth Speaker" loading="lazy" />
+          <button class="overlay" aria-label="Quick view Bluetooth Speaker" title="Quick View">
+            Quick View
+          </button>
+        </div>
+        <div class="card-content">
+          <h2 id="prod3-title">Bluetooth Speaker</h2>
+          <p id="prod3-desc">Portable speaker with powerful bass and long battery life.</p>
+          <div class="rating" aria-label="Rating: 4 out of 5 stars">⭐⭐⭐⭐☆</div>
+          <div class="price">$59.99</div>
+          <button class="buy-btn" aria-label="Buy Bluetooth Speaker for $59.99">Buy Now</button>
+        </div>
+      </article>
+
+      <article class="product-card" role="listitem" data-category="mouse" data-price="low" tabindex="0" data-aos="fade-up" data-aos-delay="300" aria-labelledby="prod4-title" aria-describedby="prod4-desc">
+        <div class="card-image">
+          <img src="mouse.jpg" alt="Gaming Mouse" loading="lazy" />
+          <button class="overlay" aria-label="Quick view Gaming Mouse" title="Quick View">
+            Quick View
+          </button>
+        </div>
+        <div class="card-content">
+          <h2 id="prod4-title">Gaming Mouse</h2>
+          <p id="prod4-desc">High DPI precision mouse with customizable RGB lights.</p>
+          <div class="rating" aria-label="Rating: 5 out of 5 stars">⭐⭐⭐⭐⭐</div>
+          <div class="price">$39.99</div>
+          <button class="buy-btn" aria-label="Buy Gaming Mouse for $39.99">Buy Now</button>
+        </div>
+      </article>
+
+      <article class="product-card" role="listitem" data-category="stand" data-price="low" tabindex="0" data-aos="fade-up" data-aos-delay="400" aria-labelledby="prod5-title" aria-describedby="prod5-desc">
+        <div class="card-image">
+          <img src="stand.webp" alt="Aluminum Laptop Stand" loading="lazy" />
+          <button class="overlay" aria-label="Quick view Aluminum Laptop Stand" title="Quick View">
+            Quick View
+          </button>
+        </div>
+        <div class="card-content">
+          <h2 id="prod5-title">Aluminum Laptop Stand</h2>
+          <p id="prod5-desc">Ergonomic and foldable stand for better posture and cooling.</p>
+          <div class="rating" aria-label="Rating: 4 out of 5 stars">⭐⭐⭐⭐☆</div>
+          <div class="price">$25.00</div>
+          <button class="buy-btn" aria-label="Buy Aluminum Laptop Stand for $25.00">Buy Now</button>
+        </div>
+      </article>
+
+      <article class="product-card" role="listitem" data-category="charger" data-price="low" tabindex="0" data-aos="fade-up" data-aos-delay="500" aria-labelledby="prod6-title" aria-describedby="prod6-desc">
+        <div class="card-image">
+          <img src="charger.jpg" alt="Wireless Charger" loading="lazy" />
+          <button class="overlay" aria-label="Quick view Wireless Charger" title="Quick View">
+            Quick View
+          </button>
+        </div>
+        <div class="card-content">
+          <h2 id="prod6-title">Wireless Charger</h2>
+          <p id="prod6-desc">Fast wireless charging pad compatible with all devices.</p>
+          <div class="rating" aria-label="Rating: 4 out of 5 stars">⭐⭐⭐⭐☆</div>
+          <div class="price">$18.50</div>
+          <button class="buy-btn" aria-label="Buy Wireless Charger for $18.50">Buy Now</button>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <div id="toast" role="alert" aria-live="assertive" aria-atomic="true"></div>
+
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true,
+    });
+  </script>
+  <script src="script.js"></script>
+</body>
+</html>
